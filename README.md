@@ -7,7 +7,7 @@ Images are hosted at `imperialplugins/unturned-ii`. You can visit the [Docker Hu
 
 Example command to host a simple Unturned II server:
 
-`docker run -it -p 27015:27015 -p 27016:27016 -e --restart unless-stopped --name myserverinstance imperialplugins/unturned-ii`
+`docker run -it -p 27015:27015 -p 27016:27016 --restart unless-stopped --name myserverinstance imperialplugins/unturned-ii`
 
 You can also define STEAM_CMD_ARGS to add your custom steamcmd commands on each restart:
 `docker run -it -p 27015:27015 -p 27016:27016 -e STEAM_CMD_ARGS="+download_depot <somedepot>" --restart unless-stopped --name myserverinstance imperialplugins/unturned-ii`
@@ -20,7 +20,7 @@ After building, you can start your server like the command in "Getting Started",
 ## Non-Docker Usage
 First install the required dependencies:
 ```sh
-$ sudo apt-get install -y unzip tar curl coreutils lib32gcc1 git glibc.i686 jq
+$ sudo apt-get install -y unzip tar curl coreutils lib32gcc1 gcc-multilib jq
 ```
 
 Set GAME_INSTALL_DIR and GAME_ID (730200 for dedicated server) environment variables:
