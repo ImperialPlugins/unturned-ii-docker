@@ -2,4 +2,4 @@
 cd $GAME_INSTALL_DIR
 ulimit -n 2048
 
-./UnturnedServer.sh
+./U4Server.sh "$@" 
