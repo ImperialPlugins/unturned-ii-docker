@@ -3,19 +3,19 @@ This repository contains scripts for installing Unturned II Linux servers (optio
 It will auto-download the game on first start and download updates on each restart. It can detect crashes and auto restart in that case.
 
 # Getting Started
-Images are hosted at `imperialplugins/unturned2`. You can visit the [Docker Hub Repository](https://hub.docker.com/r/imperialplugins/unturned2) for more information.
+Images are hosted at `imperialplugins/unturned-ii`. You can visit the [Docker Hub Repository](https://hub.docker.com/r/imperialplugins/unturned-ii) for more information.
 
 Example command to host a simple Unturned II server:
 
-`docker run -it -p 27015:27015 -p 27016:27016 -e --restart unless-stopped --name myserverinstance imperialplugins/unturned2`
+`docker run -it -p 27015:27015 -p 27016:27016 -e --restart unless-stopped --name myserverinstance imperialplugins/unturned-ii`
 
 You can also define STEAM_CMD_ARGS to add your custom steamcmd commands on each restart:
-`docker run -it -p 27015:27015 -p 27016:27016 -e STEAM_CMD_ARGS="+download_depot <somedepot>" --restart unless-stopped --name myserverinstance imperialplugins/unturned2`
+`docker run -it -p 27015:27015 -p 27016:27016 -e STEAM_CMD_ARGS="+download_depot <somedepot>" --restart unless-stopped --name myserverinstance imperialplugins/unturned-ii`
 
 ## Building
-To build, use `docker build . -t unturned2`.
+To build, use `docker build . -t unturned-ii`.
 
-After building, you can start your server like the command in "Getting Started", but you will have to replace "imperialplugins/unturned2" with just "unturned2".
+After building, you can start your server like the command in "Getting Started", but you will have to replace "imperialplugins/unturned-ii" with just "unturned-ii".
 
 ## Non-Docker Usage
 First install the required dependencies:
