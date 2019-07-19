@@ -1,4 +1,4 @@
-# Unturned-Docker
+# Unturned II Docker
 This repository contains scripts for installing Unturned II Linux servers (optionally without docker).
 It will auto-download the game on first start and download updates on each restart. It can detect crashes and auto restart in that case.
 
